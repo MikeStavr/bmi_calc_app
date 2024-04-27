@@ -13,8 +13,6 @@ It uses flutter state management to calculate the BMI of a person along side wit
  - [Flutter State Management](https://docs.flutter.dev/data-and-backend/state-mgmt/options#setstate)
 
 ### Pictures:
-![Homescreen mockup](https://github.com/MikeStavr/bmi_calc_app/blob/master/images/mockup_home_portrait.png)
-
-![Calculated BMI](https://github.com/MikeStavr/bmi_calc_app/blob/master/images/screen_bmi_calced-portrait.png)
-
-![History page](https://github.com/MikeStavr/bmi_calc_app/blob/master/images/screen_history-portrait.png)
+<img src="https://github.com/MikeStavr/bmi_calc_app/blob/master/images/mockup_home_portrait.png"/>
+<img src="https://github.com/MikeStavr/bmi_calc_app/blob/master/images/screen_bmi_calced-portrait.png"/>
+<img src="https://github.com/MikeStavr/bmi_calc_app/blob/master/images/screen_history-portrait.png"/>
