@@ -11,19 +11,4 @@ class Database {
   void updateData() {
     bmiBox.put("BMIDATA", bmis);
   }
-
-  List settings = [
-    "Dark Mode",
-    "About",
-  ];
-
-  final settingsBox = Hive.box('settings');
-
-  void loadSettings() {
-    settings = settingsBox.get("SETTINGS");
-  }
-
-  void updateSettings() {
-    settingsBox.put("SETTINGS", settings);
-  }
 }

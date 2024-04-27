@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 
 import 'screens/history_page.dart';
-import 'screens/settings_page.dart';
 import 'package:app_bmi_calculator/screens/home_page.dart';
 
 void main() async {
@@ -26,15 +25,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var settingsBox = Hive.box("settings");
-  List settingsList = [];
   ThemeMode _themeMode = ThemeMode.system;
 
   @override
   Widget build(BuildContext context) {
-    List settings = settingsBox.get("SETTINGS");
-    _themeMode = settings[0][1] ? ThemeMode.dark : ThemeMode.light;
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
@@ -45,14 +39,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/homepage': (context) => HomePage(),
         '/historypage': (context) => HistoryPage(),
-        '/settingspage': (context) => SettingsPage(),
       },
     );
-  }
-
-  void changeTheme(ThemeMode themeMode) {
-    setState(() {
-      _themeMode = themeMode;
-    });
   }
 }

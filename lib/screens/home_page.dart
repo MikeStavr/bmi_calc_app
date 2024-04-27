@@ -87,16 +87,6 @@ class _HomePageState extends State<HomePage> {
                   Navigator.pushNamed(context, '/historypage')
                 },
               ),
-              ListTile(
-                iconColor: Colors.white,
-                textColor: Colors.white,
-                title: Text('Settings'),
-                leading: Icon(Icons.settings),
-                onTap: () => {
-                  Navigator.pop(context),
-                  Navigator.pushNamed(context, '/settingspage')
-                },
-              )
             ],
           ),
         ),
